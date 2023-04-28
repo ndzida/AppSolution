@@ -1,0 +1,86 @@
+9.11.2022. 1:16:51	This log contains information about the import schema operation into project 'AdminDB' on computer 'DESKTOP-D8577ES' by user 'Nikola'.
+9.11.2022. 1:16:52	Import of database schema has started.
+9.11.2022. 1:16:52	Gathering database credentials
+9.11.2022. 1:16:52	Gathering database options
+9.11.2022. 1:16:52	Gathering generic database scoped configuration option
+9.11.2022. 1:16:52	Gathering users
+9.11.2022. 1:16:52	Gathering roles
+9.11.2022. 1:16:52	Gathering application roles
+9.11.2022. 1:16:52	Gathering role memberships
+9.11.2022. 1:16:52	Gathering filegroups
+9.11.2022. 1:16:52	Gathering full-text catalogs
+9.11.2022. 1:16:52	Gathering assemblies
+9.11.2022. 1:16:52	Gathering certificates
+9.11.2022. 1:16:52	Gathering asymmetric keys
+9.11.2022. 1:16:52	Gathering symmetric keys
+9.11.2022. 1:16:52	Gathering encrypted symmetric keys
+9.11.2022. 1:16:52	Gathering schemas
+9.11.2022. 1:16:52	Gathering XML schema collections
+9.11.2022. 1:16:52	Gathering user-defined data types
+9.11.2022. 1:16:52	Gathering user-defined types
+9.11.2022. 1:16:52	Gathering table types
+9.11.2022. 1:16:52	Gathering unique keys for table types
+9.11.2022. 1:16:52	Gathering primary keys for table types
+9.11.2022. 1:16:52	Gathering indexes for table types
+9.11.2022. 1:16:52	Gathering check constraints for table types
+9.11.2022. 1:16:52	Gathering default constraints for table types
+9.11.2022. 1:16:52	Gathering partition functions
+9.11.2022. 1:16:52	Gathering partition schemes
+9.11.2022. 1:16:52	Gathering functions
+9.11.2022. 1:16:52	Gathering encrypted functions
+9.11.2022. 1:16:52	Gathering aggregates
+9.11.2022. 1:16:52	Gathering procedures
+9.11.2022. 1:16:52	Gathering encrypted procedures
+9.11.2022. 1:16:52	Gathering tables
+9.11.2022. 1:16:52	Gathering primary keys
+9.11.2022. 1:16:52	Gathering unique constraints
+9.11.2022. 1:16:52	Gathering foreign keys
+9.11.2022. 1:16:52	Gathering default constraints
+9.11.2022. 1:16:52	Gathering check constraints
+9.11.2022. 1:16:52	Gathering views
+9.11.2022. 1:16:52	Gathering encrypted views
+9.11.2022. 1:16:52	Gathering indexes
+9.11.2022. 1:16:52	Gathering statistics
+9.11.2022. 1:16:52	Gathering full-text index stoplists
+9.11.2022. 1:16:52	Gathering search property lists
+9.11.2022. 1:16:52	Gathering search properties
+9.11.2022. 1:16:52	Gathering full-text indexes
+9.11.2022. 1:16:52	Gathering column store indexes
+9.11.2022. 1:16:52	Gathering spatial indexes
+9.11.2022. 1:16:52	Gathering XML indexes
+9.11.2022. 1:16:52	Gathering Selective XML indexes
+9.11.2022. 1:16:52	Gathering encrypted triggers
+9.11.2022. 1:16:52	Gathering triggers
+9.11.2022. 1:16:52	Gathering encrypted and clr ddl triggers
+9.11.2022. 1:16:52	Gathering ddl triggers
+9.11.2022. 1:16:52	Gathering synonyms
+9.11.2022. 1:16:52	Gathering defaults
+9.11.2022. 1:16:52	Gathering data constraint uddt bindings
+9.11.2022. 1:16:52	Gathering rules
+9.11.2022. 1:16:52	Gathering data constraint uddt bindings
+9.11.2022. 1:16:52	Gathering message types
+9.11.2022. 1:16:52	Gathering queues
+9.11.2022. 1:16:52	Gathering contracts
+9.11.2022. 1:16:52	Gathering services
+9.11.2022. 1:16:52	Gathering event notifications
+9.11.2022. 1:16:52	Gathering remote service bindings
+9.11.2022. 1:16:52	Gathering broker priorities
+9.11.2022. 1:16:52	Gathering signatures
+9.11.2022. 1:16:52	Gathering data compression options
+9.11.2022. 1:16:52	Gathering sequence types
+9.11.2022. 1:16:52	Gathering security policies
+9.11.2022. 1:16:52	Gather column encryption keys
+9.11.2022. 1:16:52	Gathering column master keys
+9.11.2022. 1:16:52	Gathering external data sources
+9.11.2022. 1:16:52	Gathering external file formats
+9.11.2022. 1:16:52	Gathering external tables
+9.11.2022. 1:16:52	Gathering extended properties
+9.11.2022. 1:16:52	Gathering assemblies
+9.11.2022. 1:16:52	Gathering credentials
+9.11.2022. 1:16:52	Gathering logins
+9.11.2022. 1:16:52	Gathering server audits
+9.11.2022. 1:16:52	Scanning project for duplicate elements
+9.11.2022. 1:16:52	Finished duplicate element processing
+9.11.2022. 1:16:52	Finished importing database.
+9.11.2022. 1:16:52	A summary of the import was saved to the following location: C:\VS\AppSolution\DBProjects\AdminDB\Import Schema Logs\AdminDB_20221109121651.log
+9.11.2022. 1:16:52	Click Finish to continue...

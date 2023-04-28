@@ -1,0 +1,6 @@
+C:\VS\AppSolution\Class Libraries\Models\bin\Debug\Models.dll
+C:\VS\AppSolution\Class Libraries\Models\bin\Debug\Models.pdb
+C:\VS\AppSolution\Class Libraries\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\VS\AppSolution\Class Libraries\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\VS\AppSolution\Class Libraries\Models\obj\Debug\Models.dll
+C:\VS\AppSolution\Class Libraries\Models\obj\Debug\Models.pdb

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [admindb_admin]
+    WITH PASSWORD = N'7QsIozkvuHpghv0iea_|zu?ymsFT7_&#$!~<mpiazspRcIex', SID = 0x93C9A50EF56E6945ADE6B8B4D92499E3, DEFAULT_DATABASE = [AdminDB], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

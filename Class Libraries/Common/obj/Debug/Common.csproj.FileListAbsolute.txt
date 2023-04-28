@@ -1,0 +1,13 @@
+C:\VS\AppSolution\Class Libraries\Common\bin\Debug\Common.dll
+C:\VS\AppSolution\Class Libraries\Common\bin\Debug\Common.pdb
+C:\VS\AppSolution\Class Libraries\Common\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\VS\AppSolution\Class Libraries\Common\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\VS\AppSolution\Class Libraries\Common\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\VS\AppSolution\Class Libraries\Common\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\VS\AppSolution\Class Libraries\Common\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\VS\AppSolution\Class Libraries\Common\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\VS\AppSolution\Class Libraries\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\VS\AppSolution\Class Libraries\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\VS\AppSolution\Class Libraries\Common\obj\Debug\Common.csproj.CopyComplete
+C:\VS\AppSolution\Class Libraries\Common\obj\Debug\Common.dll
+C:\VS\AppSolution\Class Libraries\Common\obj\Debug\Common.pdb

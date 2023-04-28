@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="MainApp.WPF.UserControls.AdministrateUserRights.UserControls.ApplicationDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:cmd="clr-namespace:MainApp.WPF.UserControls.AdministrateUserRights.UserControls.Commands"
+             xmlns:conv="clr-namespace:MainApp.WPF.Converters"
+             xmlns:local="clr-namespace:MainApp.WPF.UserControls.AdministrateUserRights.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+    <UserControl.Resources>
+        <conv:BoolToVisibilityConverter x:Key="boolToVisibility" />
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{x:Static cmd:CustomCommands.New}" CanExecute="NewCommand_CanExecute" Executed="NewCommand_Executed" />
+        <CommandBinding Command="{x:Static cmd:CustomCommands.Save}" CanExecute="SaveCommand_CanExecute" Executed="SaveCommand_Executed" />
+        <CommandBinding Command="{x:Static cmd:CustomCommands.Edit}" CanExecute="EditCommand_CanExecute" Executed="EditCommand_Executed" />
+        <CommandBinding Command="{x:Static cmd:CustomCommands.Delete}" CanExecute="DeleteCommand_CanExecute" Executed="DeleteCommand_Executed" />
+    </UserControl.CommandBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <!--Header details-->
+        <TextBlock x:Name="headerDetails" 
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Style="{StaticResource headerText}" 
+                   Text="{Binding HeaderDetails}" 
+                   HorizontalAlignment="Left" />
+
+        <!-- Application name -->
+        <TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   Text="Application title" />
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+            <TextBox Text="{Binding Application.ApplicationTitle}" IsEnabled="{Binding ControlsEnabled}" />
+            <TextBlock x:Name="errorApplicationName" 
+                       Text="Please enter application name" 
+                       Foreground="Red" 
+                       HorizontalAlignment="Left"
+                       Visibility="{Binding IsErrorVisible, Converter={StaticResource boolToVisibility}}" />
+        </StackPanel>
+
+        <!-- Buttons-->
+        <Button x:Name="btnNew" 
+                Command="{x:Static cmd:CustomCommands.New}"
+                Grid.Row="0"
+                Grid.Column="1"
+                Content="New" 
+                HorizontalAlignment="Right" 
+                Margin="10,0,65,0" />
+        <StackPanel Orientation="Horizontal" 
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    HorizontalAlignment="Right"
+                    Margin="10,0,65,0">
+            <Button x:Name="btnSave" Content="Save" Command="{x:Static cmd:CustomCommands.Save}" />
+            <Button x:Name="btnEdit" Content="Edit" Command="{x:Static cmd:CustomCommands.Edit}" />
+            <Button x:Name="btnDelete" Content="Delete" Command="{x:Static cmd:CustomCommands.Delete}" />
+        </StackPanel>
+
+
+    </Grid>
+</UserControl>

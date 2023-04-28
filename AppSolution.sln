@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBProjects", "DBProjects", "{E41AE553-D211-483E-A0AD-10FCAE6BB60E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task Scheduler", "Task Scheduler", "{9F0FC86B-0D63-4610-A8DE-41CDCE272E16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{764EAA42-6E13-4BEC-BB98-89C1BC2E34FC}"
+	ProjectSection(SolutionItems) = preProject
+		DBProjects\Task Scheduler\Jobs\TaskSchedulerJob.bat = DBProjects\Task Scheduler\Jobs\TaskSchedulerJob.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{F12167B9-A3AE-4885-8885-FD9C3740546E}"
+	ProjectSection(SolutionItems) = preProject
+		DBProjects\Task Scheduler\Scripts\TaskSchedulerJobScript.sql = DBProjects\Task Scheduler\Scripts\TaskSchedulerJobScript.sql
+	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CoreDB", "DBProjects\CoreDB\CoreDB.sqlproj", "{BA5C5A1F-9AE0-4CCE-87BD-FC5882DC335B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdminDB", "DBProjects\AdminDB\AdminDB.sqlproj", "{82387BCD-BB17-4910-AA7E-EE559DFFEE22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class Libraries", "Class Libraries", "{F764C49D-024E-474F-94BB-BD3160C3CC87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{DAD5FD85-86E7-4346-B8AA-23E7BFF929D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF", "WCF", "{3EE14054-E25E-491D-AD92-E655AFF0BA8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NETCore", "NETCore", "{145F0C2A-B9CE-48D3-BD3A-C7F5356E0B5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp.WPF", "WPF\MainApp.WPF\MainApp.WPF.csproj", "{5F546D88-492F-4045-9052-0071AE67B182}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Class Libraries\Common\Common.csproj", "{5F9AB2B5-3718-4892-BC28-6AA22561BEB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Class Libraries\Models\Models.csproj", "{52A2BC49-6FD7-416A-8137-785F99B37672}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA5C5A1F-9AE0-4CCE-87BD-FC5882DC335B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5C5A1F-9AE0-4CCE-87BD-FC5882DC335B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA5C5A1F-9AE0-4CCE-87BD-FC5882DC335B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5C5A1F-9AE0-4CCE-87BD-FC5882DC335B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5C5A1F-9AE0-4CCE-87BD-FC5882DC335B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{82387BCD-BB17-4910-AA7E-EE559DFFEE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82387BCD-BB17-4910-AA7E-EE559DFFEE22}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{82387BCD-BB17-4910-AA7E-EE559DFFEE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82387BCD-BB17-4910-AA7E-EE559DFFEE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82387BCD-BB17-4910-AA7E-EE559DFFEE22}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5F546D88-492F-4045-9052-0071AE67B182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F546D88-492F-4045-9052-0071AE67B182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F546D88-492F-4045-9052-0071AE67B182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F546D88-492F-4045-9052-0071AE67B182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9AB2B5-3718-4892-BC28-6AA22561BEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9AB2B5-3718-4892-BC28-6AA22561BEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9AB2B5-3718-4892-BC28-6AA22561BEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9AB2B5-3718-4892-BC28-6AA22561BEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A2BC49-6FD7-416A-8137-785F99B37672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A2BC49-6FD7-416A-8137-785F99B37672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A2BC49-6FD7-416A-8137-785F99B37672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A2BC49-6FD7-416A-8137-785F99B37672}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F0FC86B-0D63-4610-A8DE-41CDCE272E16} = {E41AE553-D211-483E-A0AD-10FCAE6BB60E}
+		{764EAA42-6E13-4BEC-BB98-89C1BC2E34FC} = {9F0FC86B-0D63-4610-A8DE-41CDCE272E16}
+		{F12167B9-A3AE-4885-8885-FD9C3740546E} = {9F0FC86B-0D63-4610-A8DE-41CDCE272E16}
+		{BA5C5A1F-9AE0-4CCE-87BD-FC5882DC335B} = {E41AE553-D211-483E-A0AD-10FCAE6BB60E}
+		{82387BCD-BB17-4910-AA7E-EE559DFFEE22} = {E41AE553-D211-483E-A0AD-10FCAE6BB60E}
+		{5F546D88-492F-4045-9052-0071AE67B182} = {DAD5FD85-86E7-4346-B8AA-23E7BFF929D2}
+		{5F9AB2B5-3718-4892-BC28-6AA22561BEB8} = {F764C49D-024E-474F-94BB-BD3160C3CC87}
+		{52A2BC49-6FD7-416A-8137-785F99B37672} = {F764C49D-024E-474F-94BB-BD3160C3CC87}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B453AD9-BB71-4C58-A282-0842EF481F96}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/nikoladzida
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WPF\\MainApp.WPF\\MainApp.WPF.csproj
+		SccProjectTopLevelParentUniqueName1 = AppSolution.sln
+		SccProjectName1 = WPF/MainApp.WPF
+		SccLocalPath1 = WPF\\MainApp.WPF
+		SccProjectUniqueName2 = Class\u0020Libraries\\Common\\Common.csproj
+		SccProjectTopLevelParentUniqueName2 = AppSolution.sln
+		SccProjectName2 = Class\u0020Libraries/Common
+		SccLocalPath2 = Class\u0020Libraries\\Common
+		SccProjectUniqueName3 = Class\u0020Libraries\\Models\\Models.csproj
+		SccProjectTopLevelParentUniqueName3 = AppSolution.sln
+		SccProjectName3 = Class\u0020Libraries/Models
+		SccLocalPath3 = Class\u0020Libraries\\Models
+	EndGlobalSection
+EndGlobal

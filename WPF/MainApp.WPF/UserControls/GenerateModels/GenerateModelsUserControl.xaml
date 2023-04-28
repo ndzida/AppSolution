@@ -1,0 +1,181 @@
+﻿<UserControl x:Class="MainApp.WPF.UserControls.GenerateModelsUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Background="White">
+    <ScrollViewer>
+    <Grid Margin="10" Background="Wheat">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/><!--Header-->
+            <RowDefinition Height="30"/><!--Rectangle-->
+            <RowDefinition Height="70"/><!--Servers-->
+            <RowDefinition Height="70"/><!--Databases-->
+            <RowDefinition Height="*"/><!--Tables label-->
+            <RowDefinition Height="*"/><!--Tables-->
+            <RowDefinition Height="*"/><!--Views label-->
+            <RowDefinition Height="*"/><!--Views-->
+            <RowDefinition Height="50"/><!--Define namespace-->
+            <RowDefinition Height="50"/><!--Save folder-->
+            <RowDefinition Height="50"/><!--Buttons-->
+        </Grid.RowDefinitions>
+        
+        <!--Header & rectangle-->
+        <TextBlock Grid.Row="0" 
+                   Grid.ColumnSpan="2" 
+                   Margin="5"
+                   Text="Generate models"
+                   FontSize="16"
+                   FontWeight="Bold"/>
+        <Rectangle Grid.Row="1"
+                   Grid.ColumnSpan="2"
+                   Margin="5"
+                   Height="1"
+                   Fill="DarkGray"
+                   VerticalAlignment="Top"/>
+
+        <!--Servers-->
+        <TextBlock Grid.Column="0"
+                   Grid.Row="2"
+                   HorizontalAlignment="Right"
+                   Margin="1"
+                   Text="Select server:"/>
+        <StackPanel Grid.Column="1"
+                    Grid.Row="2"
+                    HorizontalAlignment="Right"
+                    Width="600">
+            <ComboBox x:Name="cbxServers"
+                      SelectionChanged="cbxServers_SelectionChanged"/>
+            <TextBlock x:Name="errorServers"
+                       Text="Please select server"
+                       Foreground="Red"
+                       HorizontalAlignment="Left"
+                       Visibility="Collapsed"/>
+        </StackPanel>
+
+        <!--Databases-->
+        <TextBlock Grid.Column="0"
+                   Grid.Row="3"
+                   HorizontalAlignment="Right"
+                   Margin="1"
+                   Text="Select database:"/>
+        <StackPanel Grid.Column="1"
+                    Grid.Row="3"
+                    HorizontalAlignment="Right"
+                    Width="600">
+            <ComboBox x:Name="cbxDatabases"
+                      SelectionChanged="cbxDatabases_SelectionChanged"/>
+            <TextBlock x:Name="errorDatabases"
+                       Text="Please select database"
+                       Foreground="Red"
+                       HorizontalAlignment="Left"
+                       Visibility="Collapsed"/>
+        </StackPanel>
+        
+        <!--Tables label-->
+        <TextBlock Grid.Row="4"
+                   Grid.ColumnSpan="2"
+                   Margin="5"
+                   Text="Select tables to generate"/>
+        
+        <!--Tables-->
+        <DataGrid Grid.Row="5"
+                  Grid.ColumnSpan="2"
+                  x:Name="dataGridTables"
+                  AutoGenerateColumns="False"
+                  HorizontalAlignment="Left"
+                  Margin="10,0">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="Generate" Binding="{Binding IsCheckedForExport}"/>
+                <DataGridTextColumn Header="Table name" Binding="{Binding Table.Name}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <!--Views label-->
+        <TextBlock Grid.Row="6"
+                   Grid.ColumnSpan="2"
+                   Margin="5"
+                   Text="Select views to generate"/>
+        
+        <!--Views-->
+        <DataGrid Grid.Row="7"
+                  Grid.ColumnSpan="2"
+                  x:Name="dataGridViews"
+                  AutoGenerateColumns="False"
+                  HorizontalAlignment="Left"
+                  Margin="10,0">
+            <DataGrid.Columns>
+                    <DataGridCheckBoxColumn Header="Generate" Binding="{Binding IsCheckedForExport}"/>
+                <DataGridTextColumn Header="View name" Binding="{Binding View.Name}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!--Define namespace-->        
+        <TextBlock Grid.Column="0"
+                   Grid.Row="8"
+                   HorizontalAlignment="Right"
+                   Text="Define namespace for models"
+                   TextWrapping="Wrap"/>
+        <StackPanel Grid.Column="1"
+                    Grid.Row="8"
+                    HorizontalAlignment="Left">
+            <TextBox x:Name="tBoxNamespace"
+                     Width="400"
+                     Height="30"
+                     Margin="10,0"
+                     Padding="5"/>
+            <TextBlock x:Name="errorNamespace"
+                       Text="Please set Namespace"
+                       Foreground="Red"
+                       Visibility="Collapsed"/>
+        </StackPanel>
+        
+        <!--Save folder-->
+        <TextBlock Grid.Column="0"
+                   Grid.Row="9"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Text="Select save folder"
+                   TextWrapping="Wrap"/>
+        <StackPanel Grid.Column="1"
+                    Grid.Row="9"
+                    HorizontalAlignment="Left"
+                    Orientation="Horizontal">
+            <TextBox x:Name="tBoxFolderPath"
+                     Width="400"
+                     Height="30"
+                     Margin="10,0"
+                     Padding="5"
+                     Foreground="LightGray"
+                     IsReadOnly="True"/>
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <Button x:Name="btnFolderPath"
+                        Width="80"
+                        Content="Browse"
+                        Click="BtnFolderPath_Click"/>
+                <TextBlock x:Name="errorFolderPath"
+                           Text="Please select folder"
+                           TextWrapping="Wrap"
+                           Foreground="Red"
+                           Visibility="Collapsed"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <!--Buttons-->
+        <StackPanel Grid.Row="10"
+                   Grid.Column="1"
+                   HorizontalAlignment="Right"
+                   Orientation="Horizontal"
+                   Margin="0,0,0,0">
+            <Button x:Name="btnGenerate" Click="BtnGenerate_Click" Content="Generate" Width="80" Margin="5,10"/>
+            <Button x:Name="btnCancel" Click="BtnCancel_Click" Content="Cancel" Width="80" Margin="5,10"/>
+            <Button x:Name="btnClose" Click="BtnClose_Click" Content="Close" Width="80" Margin="5,10"/>
+        </StackPanel>
+    </Grid>
+    </ScrollViewer>
+</UserControl>
